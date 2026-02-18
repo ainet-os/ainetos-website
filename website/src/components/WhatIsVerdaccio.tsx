@@ -9,20 +9,16 @@ import styles from './WhatIsVerdaccio.module.scss';
 const WhatIs = (): React.ReactElement => (
   <section className={styles.whatIs}>
     <h1 className={styles['whatIs--title']}>
-      <Translate values={{ verdaccio: <i>Verdaccio</i> }}>{'What is {verdaccio}?'}</Translate>
+      <Translate values={{ ainetos: <i>AinetOS</i> }}>{'什么是 {ainetos}？'}</Translate>
     </h1>
     <p className={styles['whatIs--p']}>
       <Translate>
-        Verdaccio is a simple, zero-config-required local private NPM registry. No need for an
-        entire database just to get started. Verdaccio comes out of the box with its own tiny
-        database, and the ability to proxy other registries (eg. npmjs.org), also introduces caching
-        the downloaded modules along the way. For those who are looking to extend their storage
-        capabilities, Verdaccio supports various community-made plugins to hook into services such
-        as Amazon&apos;s S3, Google Cloud Storage or create your own plugin.
+        AinetOS 是一个面向云边端一体化算力与操作系统技术的开源社区。我们的核心理念是用InfiniteOS连接云、边、端三侧算力，让AI运行无处不在。
+        AinetOS 社区致力于构建 InfiniteOS 操作系统系列和 InfiniteUno 算力协同平台，实现真正的云边端一体化计算。
       </Translate>
     </p>
-    <Link to={useBaseUrl('/docs/installation')} className="link-primary">
-      <Translate>Dive into Verdaccio</Translate>
+    <Link to={useBaseUrl('/docs/intro')} className="link-primary">
+      <Translate>深入了解 AinetOS</Translate>
     </Link>
     <Divider />
   </section>

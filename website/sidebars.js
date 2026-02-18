@@ -1,105 +1,36 @@
 // @ts-check
 module.exports = {
-  // By default, Docusaurus generates a sidebar from the docs folder structure
   docs: [
     {
       type: 'category',
-      label: 'Introduction',
+      label: '介绍',
       items: [
+        'intro',
         'installation',
-        'what-is-verdaccio',
-        'cli',
-        {
-          type: 'category',
-          label: 'Setting up Verdaccio',
-          items: [
-            'cli-registry',
-            'setup-npm',
-            'setup-yarn',
-            'setup-pnpm',
-            'setup-deno',
-            'setup-bun',
-          ],
-        },
-        'who-is-using',
-        'best',
-        'docker',
-        'protect-your-dependencies',
-        'e2e',
-        'verdaccio-programmatically',
-        'security-policy',
-        'logo',
-        'third-party',
-        {
-          type: 'category',
-          label: 'Use Cases',
-          items: ['caching', 'linking-remote-registry'],
-        },
-        'articles',
+        'quick-start',
       ],
     },
     {
       type: 'category',
-      label: 'Features',
+      label: 'InfiniteOS',
       items: [
-        'configuration',
-        'uplinks',
-        'packages',
-        'authentication',
-        'notifications',
-        'logger',
-        {
-          type: 'category',
-          label: 'User Interface',
-          items: ['webui', 'ui-components'],
-        },
-        'plugins',
         {
           type: 'link',
-          label: 'Search for Plugins & Tools',
-          href: '/dev/plugins-search',
+          label: '概述',
+          href: '/projects/infiniteos',
+          key: 'infiniteos-overview',
         },
       ],
     },
     {
       type: 'category',
-      label: 'Server',
-      items: ['server-configuration', 'reverse-proxy', 'ssl', 'windows', 'iss-server'],
-    },
-    {
-      type: 'category',
-      label: 'Development',
+      label: 'InfiniteUno',
       items: [
         {
-          type: 'category',
-          label: 'Plugins',
-          items: [
-            'plugin-generator',
-            'plugin-auth',
-            'plugin-middleware',
-            'plugin-storage',
-            'plugin-theme',
-            'plugin-filter',
-          ],
-        },
-        'node-api',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'DevOps',
-      items: [
-        'kubernetes',
-        'ci',
-        {
-          type: 'category',
-          label: 'Cloud',
-          items: ['amazon'],
-        },
-        {
-          type: 'category',
-          label: 'Tools',
-          items: ['ansible', 'puppet', 'chef'],
+          type: 'link',
+          label: '概述',
+          href: '/projects/infiniteuno',
+          key: 'infiniteuno-overview',
         },
       ],
     },

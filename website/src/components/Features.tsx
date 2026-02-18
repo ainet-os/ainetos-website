@@ -9,34 +9,34 @@ import styles from './Features.module.scss';
 const FEATURES = [
   {
     image: '/img/features/lock.svg',
-    title: translate({ message: 'Use private packages' }),
+    title: translate({ message: '云边端一体化' }),
     subtitle: translate({
       message:
-        'If you want to use all benefits of npm package system in your company without sending all the code to the public, and use your private packages just as easy as public ones.',
+        'InfiniteOS 系列操作系统覆盖云、边、端三侧场景，提供统一的算力管理和调度能力，实现云边端算力的无缝协同。',
     }),
   },
   {
     image: '/img/features/link.svg',
-    title: translate({ message: 'Link multiple registries' }),
+    title: translate({ message: 'AI 无处不在' }),
     subtitle: translate({
       message:
-        'If you use multiple registries in your organization and need to fetch packages from multiple sources in one single project, you can chain multiple registries and fetch from one single endpoint.',
+        '通过 InfiniteUno 云边端算力协同平台，让 AI 应用能够在云、边、端之间自由流动，实现真正的无处不在的 AI 计算。',
     }),
   },
   {
     image: '/img/features/box.svg',
-    title: translate({ message: 'Cache npmjs.org registry' }),
+    title: translate({ message: '统一架构设计' }),
     subtitle: translate({
       message:
-        'If you have more than one server which you want to install packages from, you might want to use this to decrease latency and provide limited failover.',
+        'InfiniteOS 采用统一的架构设计，确保云、边、端三侧操作系统的一致性，提供一致的 API 接口和应用可移植性。',
     }),
   },
   {
     image: '/img/features/override.svg',
-    title: translate({ message: 'Override public packages' }),
+    title: translate({ message: '开源开放' }),
     subtitle: translate({
       message:
-        'If you want to use a modified version of some 3rd-party package, you can publish your version locally under the same name.',
+        'AinetOS 社区秉承开源精神，所有项目代码完全开放，欢迎全球开发者共同参与，推动云边端一体化技术的发展。',
     }),
   },
 ];
@@ -52,8 +52,8 @@ const Features = (): React.ReactElement => {
         ))}
       </div>
       <div className={styles.linkFeatures}>
-        <Link to={withBaseUrl('/docs/configuration')} className="link-primary">
-          <Translate>Discover more features</Translate>
+        <Link to={withBaseUrl('/docs/intro')} className="link-primary">
+          <Translate>了解更多特性</Translate>
         </Link>
       </div>
     </section>

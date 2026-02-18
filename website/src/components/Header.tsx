@@ -14,13 +14,13 @@ const Header = (): React.ReactElement => {
       <div className={styles['header--wrap']}>
         <Logo />
         <div className={styles['header--mt-2']}>
-          <h1 className={styles['header--title']}>Verdaccio</h1>
+          <h1 className={styles['header--title']}>AinetOS</h1>
           <p className={styles['header--subtitle']}>
-            <Translate>A lightweight Node.js private proxy registry</Translate>
+            <Translate>用开源OS连接云、边、端三侧算力，让AI运行无处不在</Translate>
           </p>
           <iframe
             src={
-              'https://ghbtns.com/github-btn.html?user=verdaccio&repo=verdaccio&type=star&count=true&size=large'
+              'https://ghbtns.com/github-btn.html?user=ainetos&repo=ainetos&type=star&count=true&size=large'
             }
             frameBorder="0"
             scrolling="0"
@@ -29,24 +29,24 @@ const Header = (): React.ReactElement => {
             style={{ marginTop: '8px' }}
           />
           <div className={styles['header--links']}>
-            <a href="/Talks" className={cx('link-secondary', 'secondarySpecialButton')}>
-              <Translate>WATCH</Translate>
-            </a>
-            <Link to={useBaseUrl('/docs/what-is-verdaccio')} className="link-primary">
-              <Translate>GET STARTED</Translate>
+            <Link to={useBaseUrl('/projects')} className={cx('link-secondary', 'secondarySpecialButton')}>
+              <Translate>探索项目</Translate>
             </Link>
-            <a
-              href="https://www.wfp.org/support-us/stories/ukraine-appeal"
+            <Link to={useBaseUrl('/docs/intro')} className="link-primary">
+              <Translate>快速开始</Translate>
+            </Link>
+            <Link
+              to={useBaseUrl('/community')}
               className={cx('link-secondary', 'specialButton')}
             >
-              <Translate>DONATE</Translate>
-            </a>
+              <Translate>加入社区</Translate>
+            </Link>
           </div>
         </div>
         <div className={styles['header--m-2']}>
           <Command
-            command="npm install --global verdaccio"
-            alt={translate({ message: 'NPM command to install Verdaccio' })}
+            command="git clone https://github.com/ainetos/infinite-os.git"
+            alt={translate({ message: 'Git command to clone InfiniteOS' })}
           />
         </div>
       </div>

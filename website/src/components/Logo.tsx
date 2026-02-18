@@ -8,8 +8,8 @@ const Logo: FC = (): React.ReactElement => {
   return (
     <img
       className={styles['header--imageLogo']}
-      src={useBaseUrl('/img/logo/uk/verdaccio-tiny-uk-no-bg.svg')}
-      alt="Verdaccio Logo"
+      src={useBaseUrl('/img/logo.svg')}
+      alt="AinetOS Logo"
     />
   );
 };

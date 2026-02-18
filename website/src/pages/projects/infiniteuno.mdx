@@ -1,0 +1,127 @@
+---
+title: InfiniteUno
+description: 云边端算力协同平台社区版
+---
+
+# InfiniteUno
+
+InfiniteUno 是云边端算力协同平台的社区版（InfiniteUno CE），提供统一的算力管理、调度和协同能力，让 AI 应用能够在云、边、端之间自由流动。
+
+## 项目概述
+
+InfiniteUno CE 是一个开源的云边端算力协同平台，旨在解决云、边、端三侧算力资源的管理和协同问题。通过 InfiniteUno，您可以：
+
+- 统一管理云、边、端三侧的算力资源
+- 智能调度任务到最合适的计算节点
+- 实现 AI 应用的动态部署和迁移
+- 监控和管理整个算力集群
+
+## 核心功能
+
+### 统一算力管理
+
+InfiniteUno 提供统一的算力管理界面，让您可以：
+
+- **资源发现**：自动发现和注册云、边、端节点
+- **资源监控**：实时监控各节点的资源使用情况
+- **资源分配**：灵活配置和分配算力资源
+- **资源池化**：将分散的算力资源整合为统一的资源池
+
+### 智能调度
+
+InfiniteUno 内置智能调度算法，实现：
+
+- **负载均衡**：根据节点负载情况智能分配任务
+- **延迟优化**：优先将任务调度到延迟最低的节点
+- **成本优化**：在满足性能要求的前提下优化成本
+- **故障转移**：自动检测故障并迁移任务
+
+### AI 应用支持
+
+InfiniteUno 特别针对 AI 应用场景进行了优化：
+
+- **模型部署**：支持各种 AI 模型的快速部署
+- **动态迁移**：根据负载情况动态迁移 AI 推理任务
+- **边缘推理**：支持将推理任务下沉到边缘节点
+- **云端训练**：支持在云端进行大规模模型训练
+
+### 监控和运维
+
+InfiniteUno 提供完善的监控和运维能力：
+
+- **实时监控**：实时监控系统运行状态和性能指标
+- **日志管理**：集中管理和查询日志
+- **告警通知**：支持多种告警方式和通知渠道
+- **性能分析**：提供性能分析工具，帮助优化系统性能
+
+## 架构设计
+
+InfiniteUno CE 采用微服务架构，主要组件包括：
+
+- **控制平面**：负责资源管理和任务调度
+- **数据平面**：负责实际的计算任务执行
+- **监控组件**：负责系统监控和指标收集
+- **API 网关**：提供统一的 API 接口
+
+## 快速开始
+
+### 安装 InfiniteUno CE
+
+```bash
+# 使用 Docker Compose 快速部署
+git clone https://github.com/ainetos/infinite-uno-ce.git
+cd infinite-uno-ce
+docker-compose up -d
+```
+
+### 配置节点
+
+```bash
+# 注册云端节点
+infinite-uno register --type cloud --endpoint https://cloud.example.com
+
+# 注册边缘节点
+infinite-uno register --type edge --endpoint https://edge.example.com
+
+# 注册端侧节点
+infinite-uno register --type end --endpoint https://end.example.com
+```
+
+### 部署应用
+
+```bash
+# 部署 AI 推理服务
+infinite-uno deploy --name ai-inference \
+  --image ai-model:latest \
+  --replicas 3 \
+  --strategy edge-first
+```
+
+## 与 InfiniteOS 集成
+
+InfiniteUno CE 与 InfiniteOS 系列操作系统深度集成：
+
+- **原生支持**：在 InfiniteOS 上运行 InfiniteUno 获得最佳性能
+- **统一管理**：通过 InfiniteUno 统一管理 InfiniteOS 节点
+- **无缝协同**：实现云、边、端 InfiniteOS 节点的无缝协同
+
+## 文档和资源
+
+- [GitHub 仓库](https://github.com/ainetos/infinite-uno-ce)
+- [技术文档](/docs/infiniteuno/overview)
+- [API 文档](/docs/infiniteuno/api)
+- [社区论坛](https://github.com/ainetos/ainetos/discussions)
+
+## 贡献
+
+我们欢迎所有形式的贡献！请查看我们的[贡献指南](/community/contributing)了解如何参与。
+
+## 许可证
+
+InfiniteUno CE 采用 Apache 2.0 许可证，完全开源免费。
+
+
+
+
+
+

@@ -93,7 +93,7 @@ plugins: ./plugins
 
 ### Authentication {#authentication}
 
-The authentication setup is done here. The default auth is based on `htpasswd` and is built in. You can modify this behaviour via [plugins](plugins.md). For more information about this section read the [auth page](auth.md).
+The authentication setup is done here. The default auth is based on `htpasswd` and is built in. You can modify this behaviour via [plugins](plugins.md). For more information about this section read the [auth page](authentication.md).
 
 ```yaml
 auth:

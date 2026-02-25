@@ -13,11 +13,11 @@ const WhatIs = (): React.ReactElement => (
     </h1>
     <p className={styles['whatIs--p']}>
       <Translate>
-        AinetOS 是一个面向云边端一体化算力与操作系统技术的开源社区。我们的核心理念是用InfiniteOS连接云、边、端三侧算力，让AI运行无处不在。
-        AinetOS 社区致力于构建 InfiniteOS 操作系统系列和 InfiniteUno 算力协同平台，实现真正的云边端一体化计算。
+        ai.net实验室是一个面向云边端一体化算力与操作系统技术的开放组织。我们的核心理念是用InfiniteOS连接云、边、端三侧算力，让AI运行无处不在。
+        ai.net实验室致力于构建 InfiniteOS 操作系统系列和 InfiniteUno 算力协同平台，实现真正的云边端一体化计算。
       </Translate>
     </p>
-    <Link to={useBaseUrl('/docs/intro')} className="link-primary">
+    <Link to={useBaseUrl('/docs/current/intro')} className="link-primary">
       <Translate>深入了解 AinetOS</Translate>
     </Link>
     <Divider />

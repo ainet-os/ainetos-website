@@ -16,11 +16,11 @@ const i18nConfig = {
 };
 
 module.exports = {
-  title: 'AinetOS 开源社区',
+  title: 'ai.net实验室',
   tagline: '用开源OS连接云、边、端三侧算力，让AI运行无处不在',
   organizationName: 'ainetos',
   projectName: 'ainetos',
-  url: 'https://ainetos.org',
+  url: 'https://ainetos.com',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -68,16 +68,24 @@ module.exports = {
   },
   themes: ['@docusaurus/theme-mermaid'],
   customFields: {
-    description: 'AinetOS 是一个面向云边端一体化算力与操作系统技术的开源社区',
+    description: 'ai.net实验室是一个面向云边端一体化算力与操作系统技术的开放组织',
   },
   themeConfig: {
+    metadata: [
+      { name: 'keywords', content: 'ai.net实验室,AinetOS,InfiniteOS,InfiniteUno,云边端,边缘计算,开源,算力协同,AI操作系统' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:locale', content: 'zh_CN' },
+      { property: 'og:site_name', content: 'ai.net实验室' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+    ],
+    image: 'img/logo.svg',
     mermaid: {
       theme: { light: 'neutral', dark: 'forest' },
     },
     announcementBar: {
       id: 'announcementBar',
       content:
-        '<a target="_blank" rel="noopener noreferrer" href="/docs/intro">欢迎加入 AinetOS 开源社区！</a>',
+        '<a target="_blank" rel="noopener noreferrer" href="/docs/current/intro">欢迎加入 ai.net实验室！</a>',
       isCloseable: true,
       backgroundColor: '#0ea5e9',
       textColor: '#ffffff',
@@ -123,7 +131,7 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://github.com/ainetos',
+          href: 'https://github.com/ainet-os',
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub Repository',
@@ -138,15 +146,15 @@ module.exports = {
           items: [
             {
               label: '快速开始',
-              to: '/docs/intro',
+              to: '/docs/current/intro',
             },
             {
               label: 'InfiniteOS',
-              to: '/docs/infiniteos/overview',
+              to: '/projects/infiniteos',
             },
             {
               label: 'InfiniteUno',
-              to: '/docs/infiniteuno/overview',
+              to: '/projects/infiniteuno',
             },
           ],
         },
@@ -163,7 +171,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/ainetos',
+              href: 'https://github.com/ainet-os',
             },
           ],
         },
@@ -193,12 +201,12 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/ainetos',
+              href: 'https://github.com/ainet-os',
             },           
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} AinetOS 开源社区. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} ai.net实验室. Built with Docusaurus.`,
     },
     colorMode: {
       defaultMode: 'light',
@@ -221,7 +229,7 @@ module.exports = {
           sidebarCollapsible: true,
           remarkPlugins: [[require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }]],
           editUrl: ({ locale, docPath }) => {
-            return `https://github.com/ainetos/ainetos/edit/main/website/docs/${docPath}`;
+            return `https://github.com/ainet-os/ainetos-website/edit/main/website/docs/${docPath}`;
           },
           routeBasePath: 'docs',
           // Enable versioning with 'current' to properly support i18n
@@ -244,8 +252,8 @@ module.exports = {
           trackingID: 'G-PCYM9FYJZT',
         },
         blog: {
-          blogTitle: 'AinetOS 社区博客',
-          blogDescription: 'AinetOS 开源社区官方博客',
+          blogTitle: 'ai.net实验室博客',
+          blogDescription: 'ai.net实验室官方博客',
           showReadingTime: true,
           postsPerPage: 3,
           feedOptions: {
@@ -255,7 +263,7 @@ module.exports = {
           blogSidebarTitle: '所有文章',
           authorsMapPath: 'authors.yml',
           editUrl: ({ locale, blogDirPath, blogPath }) => {
-            return `https://github.com/ainetos/ainetos/edit/main/website/${blogDirPath}/${blogPath}`;
+            return `https://github.com/ainet-os/ainetos-website/edit/main/website/${blogDirPath}/${blogPath}`;
           },
         },
         theme: {

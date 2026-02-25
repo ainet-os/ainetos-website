@@ -1,6 +1,6 @@
 # 快速开始
 
-本指南将帮助您快速上手使用 AinetOS 社区的核心项目。
+本指南将帮助您快速上手使用 ai.net实验室的核心项目。
 
 ## InfiniteOS 快速开始
 
@@ -90,9 +90,9 @@ infinite-uno deploy \
 
 ## 下一步
 
-- 阅读 [InfiniteOS 文档](/docs/infiniteos/overview)
-- 阅读 [InfiniteUno 文档](/docs/infiniteuno/overview)
-- 查看 [开发指南](/docs/development/environment)
+- 阅读 [InfiniteOS 项目介绍](/projects/infiniteos)
+- 阅读 [InfiniteUno 项目介绍](/projects/infiniteuno)
+- 查看 [贡献指南](/community/contributing)
 
 
 

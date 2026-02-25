@@ -6,13 +6,13 @@ export default function Community(): React.ReactElement {
   return (
     <Layout
       title="社区"
-      description="加入 AinetOS 开源社区，共同推动云边端一体化技术发展">
+      description="加入 ai.net实验室，共同推动云边端一体化技术发展">
       <div className="container margin-vert--lg">
         <div className="row">
           <div className="col col--12">
-            <h1>欢迎加入 AinetOS 社区</h1>
+            <h1>欢迎加入 ai.net实验室</h1>
             <p className="margin-vert--lg">
-              AinetOS 是一个开放、包容的开源社区，我们欢迎所有对云边端一体化技术感兴趣的朋友加入。
+              ai.net实验室是一个开放、包容的组织，我们欢迎所有对云边端一体化技术感兴趣的朋友加入。
               无论您是开发者、研究者还是用户，都可以在这里找到自己的位置。
             </p>
           </div>
@@ -49,7 +49,7 @@ export default function Community(): React.ReactElement {
             <div className="card" style={{ padding: '1.5rem', height: '100%' }}>
               <h3>关于我们</h3>
               <p>
-                了解 AinetOS 社区的使命、愿景和价值观。
+                了解 ai.net实验室的使命、愿景和价值观。
               </p>
               <Link
                 className="button button--primary"
@@ -97,10 +97,10 @@ export default function Community(): React.ReactElement {
             <h2>社区资源</h2>
             <ul>
               <li>
-                <strong>GitHub</strong>: <a href="https://github.com/ainetos">https://github.com/ainetos</a>
+                <strong>GitHub</strong>: <a href="https://github.com/ainet-os">https://github.com/ainet-os</a>
               </li>
               <li>
-                <strong>讨论区</strong>: <a href="https://github.com/ainetos/ainetos/discussions">GitHub Discussions</a>
+                <strong>讨论区</strong>: <a href="https://github.com/ainet-os/ainetos-website/discussions">GitHub Discussions</a>
               </li>
               <li>
                 <strong>邮件列表</strong>: community@ainetos.org

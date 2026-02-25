@@ -36,7 +36,7 @@ const FEATURES = [
     title: translate({ message: '开源开放' }),
     subtitle: translate({
       message:
-        'AinetOS 社区秉承开源精神，所有项目代码完全开放，欢迎全球开发者共同参与，推动云边端一体化技术的发展。',
+        'ai.net实验室秉承开源精神，所有项目代码完全开放，欢迎全球开发者共同参与，推动云边端一体化技术的发展。',
     }),
   },
 ];
@@ -52,7 +52,7 @@ const Features = (): React.ReactElement => {
         ))}
       </div>
       <div className={styles.linkFeatures}>
-        <Link to={withBaseUrl('/docs/intro')} className="link-primary">
+        <Link to={withBaseUrl('/docs/current/intro')} className="link-primary">
           <Translate>了解更多特性</Translate>
         </Link>
       </div>

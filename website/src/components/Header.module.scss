@@ -31,6 +31,29 @@
     font-size: 1.5rem;
   }
 
+  &--github {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    color: var(--ifm-font-color-base);
+    background: var(--ifm-color-emphasis-100);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.85;
+      color: var(--ifm-font-color-base);
+    }
+
+    svg {
+      flex-shrink: 0;
+    }
+  }
+
   &--links {
     margin: 1rem;
     gap: 1rem;

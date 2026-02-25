@@ -4,9 +4,10 @@ import React from 'react';
 
 import Feature from '../components/Features';
 import Header from '../components/Header';
-import PackageManagers from '../components/PackageManagers';
-import Testimonial from '../components/Testimonials';
-import UsedBy from '../components/UsedBy';
+// 暂时隐藏：SPONSORED BY、USED BY、Popular npm clients、Making the DevOps、Verdaccio testimonials
+// import PackageManagers from '../components/PackageManagers';
+// import Testimonial from '../components/Testimonials';
+// import UsedBy from '../components/UsedBy';
 import Wave from '../components/Wave';
 import WhatIsVerdaccio from '../components/WhatIsVerdaccio';
 import styles from './index.module.scss';
@@ -20,11 +21,11 @@ const Home = (): React.ReactElement => {
         <Header />
       </header>
       <main className={styles.main}>
-        <UsedBy />
+        {/* <UsedBy /> */}
         <WhatIsVerdaccio />
         <Feature />
-        <PackageManagers />
-        <Testimonial />
+        {/* <PackageManagers /> */}
+        {/* <Testimonial /> */}
       </main>
     </Layout>
   );

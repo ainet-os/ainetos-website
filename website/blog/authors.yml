@@ -1,3 +1,11 @@
+ainetos_team:
+  name: ai.net实验室
+  title: 开放组织
+  url: https://github.com/ainet-os
+  image_url: https://github.com/ainet-os.png
+  socials:
+    github: ainet-os
+
 juan_picado:
   name: Juan Picado
   title: Core Maintainer
